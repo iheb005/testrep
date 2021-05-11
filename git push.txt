@@ -1,0 +1,54 @@
+1/ git status        to see the diffrent changes in project
+
+2/ git add . 	     add changes to repository
+
+3/ git commit -m "commit2"   commit changes
+
+4-1/ git remote add origin git@github.com:iheb005/AngDashboardGBO.git   (in case it is your first commit)
+
+4/ git push origin
+
+
+**generate key for github
+ssh-keygen -t rsa -C "youremail@example.com"
+
+
+******* git push/pull ********
+
+*******git push cmd ********
+
+1/ 
+git init   // initialize repository
+
+2/
+git add.       // add all files to given folder
+git add server.js   // add specific file to given folder
+
+3/
+git status   // check/view the files which will be commited
+
+4/
+git commit -m 'message'    // commit message which adds the changes to local repo
+
+5/
+git remote add origin 'url-git-repo'      //url which is your remote repo to where your local content from your repo is pushed
+
+6/ 
+git push -u origin master/main   //push local content to github
+
+
+********* git pull cmd **********
+
+pull cmd is used to allow others to view the changes (espicially in organizations)
+
+
+1/fork the repository (copy the repo) so you can make changes without affecting the source project
+
+2/ git checkout -b 'newbranch'  //create a new branch
+3/ git add readme.md 
+git commit -m 'readme_commit' //change your files, add them to repo and  commit
+4/ git push origin 'newbranch'  //push repo to github
+5/ new branch added , click on compare & pull request
+6/ open a pull request by clicking on "create pull request"
+7/ Deleting a Branch after the PULL Request is Merged:
+pull request --> closed --> click your pull request --> delete branch
