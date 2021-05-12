@@ -23,6 +23,7 @@ On-demand delivery of IT resources and applications through the internet with pa
 
 
 **** Module2:EC2 Elastic compute cloud ****
+EC2 is a service that helps you run virtual servers in the cloud
 
 - multitenancy: sharing underlying hardware between virtual machines
 - vertical scaling: resize the instance depending on your app requirements(memory, number of CPUs) 
@@ -77,7 +78,40 @@ there are 2 approaches of Amazon EC2 auto scaling:
 after adding amazon EC2 auto scaling to your app, u can add new instances to the app and terminate them when u don't need them
 auto scaling group helps to set the min number of instances(min number of instances is the number of EC2 instances launched immediately after creating the auto scaling group)
 
-**Directing traffic with elastic load balancing
+**Directing traffic with elastic load balancing:
+
+Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. 
+
+**Messaging and queuing:
+*monolithic application: an app with tightly coupled components(if a single comp fails others will fail too and the entire app may possibly fail)
+
+* microservices approach:
+app components are loosely coupled (if one comp fail others continue to work)
+this approach is used for designing apps on AWS 
+
+there are 2 AWS services responsible for messaging and queuing:
+- Amazon simple queue service (Amazon SQS):
+you can send, store, receive messages, between software components at any volume without losing msg or requiring other services to be available
+SQS: the app sends msg into a queue,  the user/service retrieves msg from the queue, processes it and then deletes it from the queue
+PS: data contained within a message is called a payload
+
+- Amazon simple Notification service (Amazon SNS):
+publish/subscribe service. publisher publishes messages to subscribers(web servers, email @...).
+example: This is similar to the coffee shop; the cashier provides coffee orders to the barista who makes the drinks.
+
+** additionnal compute services
+serverless computing : u can't see or access the infrastructure/instances hosting your app, so u only focus on your code, u don't have to provision/manage the servers
+
+- aws lambda: serverless computing service that lets you run code without needing to provision or manage servers
+
+How AWS Lambda works:
+1/upload code to lambda 
+2/set code to trigger from an event source(aws services, HTTP endpoints)
+3/ code runs only when triggered
+4/pay only for the compute time you use
+
+-Containers:
+
 
 
 
