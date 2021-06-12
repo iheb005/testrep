@@ -44,13 +44,19 @@ latency between AZs < 10ms
 
 *Edge locations: dacenter owned by a trusted partner of aws and has a direct cocnnection with the aws network, get data fast or upload fast to aws, it allows content distribution to reduce latency for end users no matter the geo location.
 
-27.40
-*GovCloud regions: allow customers to host sensitive controlled unclassified info.
+*GovCloud regions: allow customers to host sensitive controlled unclassified info, operated and accessible by US citezens only( Dept of justice, defence, Federal.
+
+min 30 --> min 48 (create aws account, billing & budgets, change IAM user login link, activate MFA on root acc, create indiv IAM user,set pwd policy)
+
+MFA additionnal layer of security to your AWS account
 
 
+* EC2 service: 51.03
+launching instances (virtual server) 
+* Session manager: SSM(simple system manager)
+how to connect to instance
 
-
-
+min 57
 
 
 
