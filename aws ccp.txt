@@ -1,0 +1,108 @@
+aws CCP
+4 domains to focus on (content online)
+cloud concepts 28%
+security  24%
+technology  36%
+billing and pricing 12%
+
+
+* what is cloud computing ? :
+using a network of remote servers hosted on internet to store, manage and process data, rather than a local server or a PC
+
+** on-premise: you own the servers, hire IT people to configure them, pay or rent the real-estate and you take all the risk
+** Cloud providers: SO else owns the servers, hire the IT people ,pays/rent the  real estate, you're responsible for your configuring cloud services and code, SO else takes care of the rest
+
+* Cloud Computing advs:
+1/ trade capital expense for variable expense: pay on-demand when consuming computing rss instead of paying for data centers/servers
+2/ benefit from massive economies of scale: share cost with other customers
+3/ stop guessing capacities: scalablity to meet the current need(increase /decrease depending on your need), instead of paying for idle/underutilized servers
+4/increase speed and agility : launch rss in few mins instead of waiting for days/weeks to implement the solution on-premise.
+5/ stop waisting money on running/maintaining data centers
+6/apps deployment easily in few mins in multiple regions around the world --> low latency, better exp for clients at minimal costs.
+
+*Types of Cloud Computing:
+1/ SaaS for customers : a completed product run and managed by the service provider (gmail, office365)
+2/ PaaS for developers: no need to manage the underlying infra, just focus on the deployment of your app (heroku, AWS elastic Beanstalk...)
+3/IaaS for admins : acces to networking features, computers and data storage space( microsoft azure, google cloud platform, aws)
+
+*Cloud concepts:
+cloud deployment models:
+- cloud: fully utlizing cloud computing(dropbox) used for SaaS offerings in startups(low cost), new projects and companies (lack of infrastructure) 
+- hybrid: using both cloud and on-premise used for banks, large pro service providers
+- on-premise: deploy rss on-premises, using virtualization and rss managment tools called private cloud (public sector gov,super sensitive data eg:hospitals, 
+
+*AWS global infra:
+cloud computing is running in 69 availability zones within 22 geographic regions around the world, it serves over 1M active customers on more than 190 countries
+
+** regions: geographically ditinct location which has multiple datacenters, it is phisically isolated and has at least 2 AZ(availability zones), the largest region is US-EAST(all new services almost become always become available in us-EAST).
+not all services are available in all regions
+
+** avalability zones: 
+- AZ: datacenter owned and operated by AWS in which aws services run, represented by a region code + letter identifier (eg: us-east-1a,b,c...)
+- Multi-AZ: distribute instances across multiple AZs helps to handle req when one goes down.
+latency between AZs < 10ms
+
+*Edge locations: dacenter owned by a trusted partner of aws and has a direct cocnnection with the aws network, get data fast or upload fast to aws, it allows content distribution to reduce latency for end users no matter the geo location.
+
+*GovCloud regions: allow customers to host sensitive controlled unclassified info, operated and accessible by US citezens only( Dept of justice, defence, Federal.
+
+min 30 --> min 48 (create aws account, billing & budgets, change IAM user login link, activate MFA on root acc, create indiv IAM user,set pwd policy)
+
+MFA additionnal layer of security to your AWS account
+
+* EC2 service: 51.03
+launching instances (virtual server) 
+* Session manager: SSM(simple system manager)
+how to connect to instance
+3 ways to connect to instances:
+1/ Simple session manager SSM
+2/ SSH (right click on instance, connect , download key pairs)
+3/ EC2 service
+
+* Create AMI:
+AMI(Amazon Machine Image) : it provides the required info to lauch an instance
+
+* Auto scaling groups : to ensure that multiple instances/servers are running, are used to meet the demands of the traffic you have ( eg: web apps --> lot of traffic --> more servers (scalabilty))
+this service is used to build scaling plans that automate how groups of different resources respond to changes in demand. 
+
+-Scaling policies are rules used to determine how the service should react to changes within its env
+
+*ELB(elastic load balancer):
+
+distribute traffic to the different instances, so you don't experience a downtime and the web app (eg) keeps running
+
+1.07 --> 1.12 (ELB)
+
+*S3(simple storage service) :
+used to store and retrieve any amount of data at any time, from anywhere on the web
+
+-AWS S3 bucket is a public cloud storage rss, object storage offering (similar to file forders, store objects which consist of data its descriptive metadata)
+ 
+* CloudFront: CDN(content distribution/delivery network)
+
+transfer securely your content(data, files, apps, api ...) to multiple edge locations around the world with high transfer speed and low latency.
+
+*Realational database service 1.17
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
