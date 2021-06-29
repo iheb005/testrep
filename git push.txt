@@ -67,4 +67,6 @@ git remote rename <old-name> <new-name>
 2/ add new remote 
 git remote add origin https://github.com/iheb005/appGBO.git 
 
-
+*Solution3:
+1/update url:
+git remote set-url <REMOTE-NAME> <NRW-URL>
